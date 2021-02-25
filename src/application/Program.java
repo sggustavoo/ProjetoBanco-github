@@ -12,6 +12,8 @@ public class Program {
 		
 		Conta cont;
 		
+		// Inserindo dados do titular da conta
+		
 		System.out.println("======== SIMULADOR BANCO ========");
 		System.out.println();
 		System.out.print("Digite o número da conta: ");
@@ -39,6 +41,8 @@ public class Program {
 		
 		char resp2;
 		
+		// Operações de depósito e saque
+		
 		do {
 			System.out.println();
 			System.out.println("======== OPERAÇÕES ========");
@@ -52,6 +56,8 @@ public class Program {
 				System.out.print("Informe a operação: ");
 				operacao = sc.nextInt();
 			}
+			
+			// Conferindo senha
 			
 			System.out.print("Senha: ");
 			long num = sc.nextLong();
