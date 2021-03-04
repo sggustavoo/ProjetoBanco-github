@@ -51,12 +51,6 @@ public class Program {
 			System.out.print("Informe a operação: ");
 			int operacao = sc.nextInt();
 			
-			while (operacao != 1 && operacao != 2) {
-				System.out.println("OPERAÇÃO INVÁLIDA!");
-				System.out.print("Informe a operação: ");
-				operacao = sc.nextInt();
-			}
-			
 			// Conferindo senha
 			
 			System.out.print("Senha: ");
@@ -74,12 +68,18 @@ public class Program {
 					System.out.println("Dados atualizados:\n" + cont);
 					break;
 					
+				// Operação Saque é descontado uma taxa de R$ 5.00
+				
 				case 2:
 					System.out.println();
 					System.out.print("Digite o valor do saque: ");
 					double saque = sc.nextDouble();
 					cont.saque(saque);
 					System.out.println("Dados atualizados:\n" + cont);
+					break;
+					
+				default:
+					System.out.println("OPERAÇÃO INVÁLIDA!");
 					
 				}
 			}
